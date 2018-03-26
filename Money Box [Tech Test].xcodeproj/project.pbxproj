@@ -12,6 +12,7 @@
 		07DCD17520696CA800792FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17320696CA800792FC7 /* Main.storyboard */; };
 		07DCD17720696CA800792FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17620696CA800792FC7 /* Assets.xcassets */; };
 		07DCD17A20696CA800792FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17820696CA800792FC7 /* LaunchScreen.storyboard */; };
+		07DCD18220696D5400792FC7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD18120696D5400792FC7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		07DCD17620696CA800792FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DCD17920696CA800792FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DCD17B20696CA900792FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DCD18120696D5400792FC7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		07DCD16320696CA800792FC7 = {
 			isa = PBXGroup;
 			children = (
+				07DCD17820696CA800792FC7 /* LaunchScreen.storyboard */,
+				07DCD18320696D6D00792FC7 /* Git */,
 				07DCD16E20696CA800792FC7 /* Money Box [Tech Test] */,
 				07DCD16D20696CA800792FC7 /* Products */,
 			);
@@ -58,10 +62,17 @@
 				07DCD17120696CA800792FC7 /* ViewController.swift */,
 				07DCD17320696CA800792FC7 /* Main.storyboard */,
 				07DCD17620696CA800792FC7 /* Assets.xcassets */,
-				07DCD17820696CA800792FC7 /* LaunchScreen.storyboard */,
 				07DCD17B20696CA900792FC7 /* Info.plist */,
 			);
 			path = "Money Box [Tech Test]";
+			sourceTree = "<group>";
+		};
+		07DCD18320696D6D00792FC7 /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				07DCD18120696D5400792FC7 /* .gitignore */,
+			);
+			path = Git;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DCD18220696D5400792FC7 /* .gitignore in Resources */,
 				07DCD17A20696CA800792FC7 /* LaunchScreen.storyboard in Resources */,
 				07DCD17720696CA800792FC7 /* Assets.xcassets in Resources */,
 				07DCD17520696CA800792FC7 /* Main.storyboard in Resources */,
