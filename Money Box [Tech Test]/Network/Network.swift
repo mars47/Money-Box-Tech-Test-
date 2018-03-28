@@ -11,6 +11,8 @@ import UIKit
 class Network: NSObject {
     
     static var sharedSessionManager = Network()
+    var bearerToken: String?
+    var authRequest: URLRequest?
     
     func LoginRequest (username: String, password: String, completion: @escaping (Bool) -> ()) {
         
@@ -36,6 +38,7 @@ class Network: NSObject {
                         
                         do {
                             let root = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                            let bearerToken = self.getBearerToken(dict: root)
                             //print(root)
                             completion(true)
                         } catch {
@@ -69,4 +72,23 @@ class Network: NSObject {
         return request
     }
     
+    func getBearerToken(dict: [String : Any]) -> String {
+        
+        if let session = dict["Session"] as? [String: Any] {
+            if let bearerToken = session["BearerToken"] as? String {
+                print(" BEARER TOKEN: " + bearerToken)
+                return bearerToken
+            }
+        }
+        return "no token"
+    }
+    
+    func addBearerTokentoHeader(bearerToken: String, initialRequest: URLRequest) -> URLRequest{
+        
+        var request: URLRequest = initialRequest
+        request.addValue("Bearer " + bearerToken, forHTTPHeaderField: "Authorization")
+        authRequest = request
+        return request
+        
+    }
 }
