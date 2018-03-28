@@ -10,7 +10,7 @@ import UIKit
 
 class CustomTextField: UITextField {
     
-    let username = "test+env12@moneyboxapp.coM"
+    let username = "test+env12@moneyboxapp.com"
     let password = "Money$$box@107"
 
 }

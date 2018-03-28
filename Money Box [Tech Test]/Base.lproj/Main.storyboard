@@ -41,9 +41,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX">
-                                <rect key="frame" x="146" y="342" width="82" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX">
+                                <rect key="frame" x="80" y="318" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.42057639652215467" green="0.85677744289340096" blue="0.77899686074588348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,11 +56,14 @@
                         <constraints>
                             <constraint firstItem="LMD-TY-Rik" firstAttribute="top" secondItem="uLJ-lw-ElI" secondAttribute="bottom" constant="20" id="0VK-hf-fPo"/>
                             <constraint firstItem="6dt-HV-rUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="8M5-rD-hMt"/>
+                            <constraint firstItem="LSX-il-8eX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="D5g-oF-ssg"/>
                             <constraint firstItem="feU-0Z-TCm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="QAT-a9-uph"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uLJ-lw-ElI" secondAttribute="trailing" constant="80" id="TQk-d9-ZvD"/>
                             <constraint firstItem="LMD-TY-Rik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="bTZ-nV-Zpj"/>
                             <constraint firstItem="feU-0Z-TCm" firstAttribute="top" secondItem="LMD-TY-Rik" secondAttribute="bottom" constant="8" id="cus-LG-0KD"/>
                             <constraint firstItem="uLJ-lw-ElI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="eox-EV-HfT"/>
+                            <constraint firstItem="LSX-il-8eX" firstAttribute="top" secondItem="feU-0Z-TCm" secondAttribute="bottom" constant="49" id="jlW-xu-56h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LSX-il-8eX" secondAttribute="trailing" constant="80" id="lOB-ex-pr0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feU-0Z-TCm" secondAttribute="trailing" constant="80" id="mah-pl-LyU"/>
                             <constraint firstItem="uLJ-lw-ElI" firstAttribute="top" secondItem="6dt-HV-rUy" secondAttribute="bottom" constant="8" id="qgd-Ta-lqE"/>
                             <constraint firstItem="uLJ-lw-ElI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="vtI-aZ-kU3"/>
@@ -72,6 +74,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="feU-0Z-TCm" id="9me-G0-mVO"/>
                         <outlet property="usernameTextField" destination="uLJ-lw-ElI" id="Hh2-hc-Ypn"/>
+                        <segue destination="2T9-ql-FQ8" kind="show" identifier="show" id="OzL-YS-D67"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -128,4 +131,7 @@
             <point key="canvasLocation" x="1038" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OzL-YS-D67"/>
+    </inferredMetricsTieBreakers>
 </document>

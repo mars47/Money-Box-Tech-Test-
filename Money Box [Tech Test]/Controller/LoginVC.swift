@@ -25,16 +25,28 @@ class LoginVC: UIViewController {
                 Network.sharedSessionManager.LoginRequest(username: username, password: password) { (state : Bool) -> Void in
           
                     if state == true {
-
+                        DispatchQueue.main.async{
+                        self.performSegue(withIdentifier: "show", sender: nil)
+                        }
                     }
-                    else {
-                        
+                    if state == false {
+                        DispatchQueue.main.async{
+                        self.displayAlertMessage(message: "You have entered Incorrect Details")
+                        }
                     }
 
                 }
             }
         }
        
+    }
+    
+    func displayAlertMessage(message: String) {
+        
+        let alert = UIAlertController(title: "Please Try Again", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title:"Ok", style: UIAlertActionStyle.default, handler:nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

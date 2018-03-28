@@ -30,16 +30,14 @@ class Network: NSObject {
             
             // Decides whether or not the user has logged in based on the returned http status code
             if let httpresponse = response as? HTTPURLResponse {
-
-                let code = httpresponse.statusCode
-                if (code > 199 && code < 300) {
+                if (httpresponse.statusCode > 199 && httpresponse.statusCode < 300) {
                     print("SUCCESS! USER IS LOGGED IN")
                     if let data = data {
                         
                         do {
-                            let root = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                            let bearerToken = self.getBearerToken(dict: root)
-                            //print(root)
+                            let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                            self.addBearerTokentoHeader(bearerToken: self.getBearerToken(from: jsonDict), initialRequest: request)
+                            //print(jsonDict)
                             completion(true)
                         } catch {
                             print(error)
@@ -72,9 +70,9 @@ class Network: NSObject {
         return request
     }
     
-    func getBearerToken(dict: [String : Any]) -> String {
+    func getBearerToken(from: [String : Any]) -> String {
         
-        if let session = dict["Session"] as? [String: Any] {
+        if let session = from["Session"] as? [String: Any] {
             if let bearerToken = session["BearerToken"] as? String {
                 print(" BEARER TOKEN: " + bearerToken)
                 return bearerToken
@@ -83,12 +81,10 @@ class Network: NSObject {
         return "no token"
     }
     
-    func addBearerTokentoHeader(bearerToken: String, initialRequest: URLRequest) -> URLRequest{
+    func addBearerTokentoHeader(bearerToken: String, initialRequest: URLRequest) {
         
         var request: URLRequest = initialRequest
         request.addValue("Bearer " + bearerToken, forHTTPHeaderField: "Authorization")
         authRequest = request
-        return request
-        
     }
 }
