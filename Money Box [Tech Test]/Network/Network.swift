@@ -26,12 +26,10 @@ class Network: NSObject {
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error ) in
             
-            //all the variables i need returned in LoginVC, are appended to an array. the array is sent back on completion
+            //all the variables i need returned in LoginVC, are appended to 'array'. the array is sent back on completion
             var array = [Any]()
             var bool = false
-            
-            
-            
+
             // Decides whether or not the user has logged in based on the returned http status code
             if let httpresponse = response as? HTTPURLResponse {
                 if (httpresponse.statusCode > 199 && httpresponse.statusCode < 300) {
@@ -124,6 +122,50 @@ class Network: NSObject {
                 }
             }
             session.resume()
+        }
+    }
+    
+    func makeOneOfPayment(amount: Int, productID: Int, completion: @escaping ([String: Int]) -> ()) {
+        
+        if var request = completeHeader {
+            
+            request.url =  URL(string: "https://api-test00.moneyboxapp.com/oneoffpayments")
+            let parameters: [String: String] = ["Amount": "\(amount)",
+                "InvestorProductId": "\(productID)"]
+            guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+            request.httpBody = httpBody
+            
+            let session = URLSession.shared
+            session.dataTask(with: request) { (data, response, error ) in
+                
+                if let data = data {
+                    
+                    do {
+                        let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Int]
+                        completion(jsonDict)
+                        
+                    } catch {
+                        print(error)
+                    }  
+                }
+                
+            }.resume()
+        }
+    }
+    
+    func logout() -> () {
+        
+        if var request = completeHeader {
+        request.url =  URL(string: "https://api-test00.moneyboxapp.com/users/logout")
+        request.httpBody = nil
+            
+            let session = URLSession.shared
+            session.dataTask(with: request) { (data, response, error ) in
+                
+                if let repsonse = response {
+                    print(repsonse)
+                }
+            }.resume()
         }
     }
 }

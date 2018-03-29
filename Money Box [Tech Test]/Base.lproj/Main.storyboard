@@ -18,31 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLJ-lw-ElI" customClass="CustomTextField" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
-                                <rect key="frame" x="80" y="204" width="215" height="30"/>
+                                <rect key="frame" x="80" y="160" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feU-0Z-TCm" customClass="CustomTextField" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
-                                <rect key="frame" x="80" y="283" width="215" height="30"/>
+                                <rect key="frame" x="80" y="239" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dt-HV-rUy">
-                                <rect key="frame" x="80" y="175" width="41" height="21"/>
+                                <rect key="frame" x="80" y="131" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMD-TY-Rik">
-                                <rect key="frame" x="80" y="254" width="74" height="21"/>
+                                <rect key="frame" x="80" y="210" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX">
-                                <rect key="frame" x="80" y="362" width="215" height="30"/>
+                                <rect key="frame" x="80" y="318" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.42057639652215467" green="0.85677744289340096" blue="0.77899686074588348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="133.5832083958021"/>
+            <point key="canvasLocation" x="702" y="134"/>
         </scene>
         <!--User AccountVC-->
         <scene sceneID="Mrq-sx-GKQ">
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chk-Wz-Lzb">
-                                <rect key="frame" x="25" y="89" width="325" height="73"/>
+                                <rect key="frame" x="25" y="45" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="vXk-c8-M07"/>
@@ -104,7 +104,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2S-hb-hqc">
-                                <rect key="frame" x="25" y="178" width="325" height="73"/>
+                                <rect key="frame" x="25" y="134" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="hXn-2U-XFk"/>
@@ -117,15 +117,33 @@
                                     <action selector="giaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wGX-hY-lYr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55n-Jz-MrL">
+                                <rect key="frame" x="25" y="569" width="325" height="73"/>
+                                <color key="backgroundColor" red="0.85677744290000002" green="0.42508652808470115" blue="0.40568496304992441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="17u-lQ-PaZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" red="0.13350650380000001" green="0.13350650380000001" blue="0.13350650380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="giaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wzT-m3-GkF"/>
+                                    <action selector="logoutButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="Dn0-Le-TYd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="S2S-hb-hqc" firstAttribute="leading" secondItem="wZG-ZS-sNj" secondAttribute="leading" constant="25" id="0tz-9A-pka"/>
                             <constraint firstItem="wZG-ZS-sNj" firstAttribute="trailing" secondItem="S2S-hb-hqc" secondAttribute="trailing" constant="25" id="2PW-gH-Q59"/>
                             <constraint firstItem="Chk-Wz-Lzb" firstAttribute="leading" secondItem="wZG-ZS-sNj" secondAttribute="leading" constant="25" id="4yE-lF-XQh"/>
+                            <constraint firstItem="55n-Jz-MrL" firstAttribute="leading" secondItem="wZG-ZS-sNj" secondAttribute="leading" constant="25" id="BTr-1F-fPl"/>
+                            <constraint firstItem="wZG-ZS-sNj" firstAttribute="trailing" secondItem="55n-Jz-MrL" secondAttribute="trailing" constant="25" id="Kc9-Q9-4go"/>
                             <constraint firstItem="wZG-ZS-sNj" firstAttribute="trailing" secondItem="Chk-Wz-Lzb" secondAttribute="trailing" constant="25" id="Xxx-fY-Ztj"/>
                             <constraint firstItem="S2S-hb-hqc" firstAttribute="top" secondItem="Chk-Wz-Lzb" secondAttribute="bottom" constant="16" id="Z7d-Zl-bEy"/>
                             <constraint firstItem="Chk-Wz-Lzb" firstAttribute="top" secondItem="wZG-ZS-sNj" secondAttribute="top" constant="25" id="jz4-H4-pdi"/>
+                            <constraint firstItem="wZG-ZS-sNj" firstAttribute="bottom" secondItem="55n-Jz-MrL" secondAttribute="bottom" constant="25" id="kRW-1q-qg9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wZG-ZS-sNj"/>
                     </view>
@@ -133,6 +151,7 @@
                     <connections>
                         <segue destination="YGX-Vo-Crm" kind="show" identifier="isa" id="dMC-5m-eZK"/>
                         <segue destination="MYk-r7-UYD" kind="show" identifier="gia" id="Zcz-7h-TyZ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logout" id="2Do-cP-oIW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXf-cD-67F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-Lo-aAs">
-                                <rect key="frame" x="25" y="203" width="325" height="73"/>
+                                <rect key="frame" x="25" y="159" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="gtB-JI-B3Y"/>
@@ -159,22 +178,23 @@
                                 </state>
                                 <connections>
                                     <action selector="isaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="2Qg-sB-bWc"/>
+                                    <action selector="paymentButtonPressed:" destination="MYk-r7-UYD" eventType="touchUpInside" id="PhM-o3-eW3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your moneybox:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAB-Lh-uzf">
-                                <rect key="frame" x="25" y="151" width="154" height="26.5"/>
+                                <rect key="frame" x="25" y="107" width="154" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Investment Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-Xe-98T">
-                                <rect key="frame" x="25" y="74" width="270" height="27"/>
+                                <rect key="frame" x="25" y="30" width="270" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Funds&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1b-fo-wye">
-                                <rect key="frame" x="204" y="151" width="86.5" height="27"/>
+                                <rect key="frame" x="204" y="107" width="86.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -194,6 +214,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zWk-SB-pBE"/>
                     </view>
+                    <connections>
+                        <outlet property="accountBalance" destination="j1b-fo-wye" id="4Va-VA-1QP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxU-Mq-SZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qum-13-FPe">
-                                <rect key="frame" x="25" y="203" width="325" height="73"/>
+                                <rect key="frame" x="25" y="159" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="aWR-we-B2R"/>
@@ -219,22 +242,23 @@
                                 </state>
                                 <connections>
                                     <action selector="isaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="yTG-Ui-eeI"/>
+                                    <action selector="paymentButtonPressed:" destination="YGX-Vo-Crm" eventType="touchUpInside" id="MGh-qA-S5n"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your moneybox:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVr-yd-hVg">
-                                <rect key="frame" x="25" y="151" width="154" height="26.5"/>
+                                <rect key="frame" x="25" y="107" width="154" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Funds&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seo-jU-rQ4">
-                                <rect key="frame" x="204" y="151" width="86.5" height="27"/>
+                                <rect key="frame" x="204" y="107" width="86.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stocks &amp; Shares ISA " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wve-cf-uvv">
-                                <rect key="frame" x="25" y="74" width="198" height="27"/>
+                                <rect key="frame" x="25" y="30" width="198" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -255,6 +279,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w1f-PK-idx"/>
                     </view>
+                    <connections>
+                        <outlet property="accountBalance" destination="seo-jU-rQ4" id="x2L-Hb-joj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-rN-RJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +303,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfH-9H-Hcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185.59999999999999" y="133.13343328335833"/>
+            <point key="canvasLocation" x="-228" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Do-cP-oIW"/>
+    </inferredMetricsTieBreakers>
 </document>

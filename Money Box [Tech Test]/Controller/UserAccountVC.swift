@@ -14,19 +14,20 @@ class UserAccountVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Network.sharedSessionManager.downloadAccountData() { (product : [Dictionary <String, Any>]) -> () in
-
-            if var user = self.user {
-                
-                user.ISA = ISA(initWithDictionary: product[0])
-                user.GIA = GIA(initWithDictionary: product[1])
-            }
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        Network.sharedSessionManager.downloadAccountData() { (product : [Dictionary <String, Any>]) -> () in
+            
+            if var user = self.user {
+                
+                user.ISA = ISA(initWithDictionary: product[0])
+                user.GIA = GIA(initWithDictionary: product[1])
+                self.user = user
+            }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool)
@@ -60,7 +61,12 @@ class UserAccountVC: UIViewController {
                 destination.user = user
             }
         }
+    
     }
     
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        Network.sharedSessionManager.logout()
+        self.performSegue(withIdentifier: "logout", sender: nil)
+    }
 }
 
