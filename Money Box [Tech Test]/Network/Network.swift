@@ -19,10 +19,8 @@ class Network: NSObject {
         let parameters: [String: String] = ["Email": "\(username)",
             "Password": "\(password)",
             "Idfa": "the idfa of the ios device"]
-        
-        guard let url = URL(string: "https://api-test00.moneyboxapp.com/users/login") else { return }
-        let initialRequest = URLRequest(url:url)
-        let request = makeURLRequestForLogin(parameters: parameters, initRequest: initialRequest)
+
+        let request = makeURLRequestForLogin(parameters: parameters)
         
         
         let session = URLSession.shared
@@ -54,18 +52,20 @@ class Network: NSObject {
         }.resume()
     }
     
-    func makeURLRequestForLogin(parameters: [String: String], initRequest:URLRequest) -> URLRequest {
-        
-        var request: URLRequest = initRequest
-        
+    func makeURLRequestForLogin(parameters: [String: String]) -> URLRequest {
+ 
+        guard let url = URL(string: "https://api-test00.moneyboxapp.com/users/login") else {
+            return URLRequest(url: URL(string: "")!)
+        }
+        var request: URLRequest = URLRequest(url:url)
         request.httpMethod = "POST"
         request.addValue("8cb2237d0679ca88db6464", forHTTPHeaderField: "AppId")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("4.0.0", forHTTPHeaderField: "appVersion")
         request.addValue("3.0.0", forHTTPHeaderField: "apiVersion")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return request }
-        
         request.httpBody = httpBody
+        
         print(String(data: httpBody, encoding: .utf8)!)
         return request
     }
@@ -86,5 +86,13 @@ class Network: NSObject {
         var request: URLRequest = initialRequest
         request.addValue("Bearer " + bearerToken, forHTTPHeaderField: "Authorization")
         authRequest = request
+    }
+    
+    func downloadAccountData() -> () {
+          let url = URL(string: "https://api-test00.moneyboxapp.com/investorproduct/thisweek")
+        if let request = authRequest {
+            
+            
+        }
     }
 }
