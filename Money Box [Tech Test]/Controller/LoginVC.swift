@@ -24,7 +24,7 @@ class LoginVC: UIViewController {
             if let password = passwordTextField.text {
                 Network.sharedSessionManager.LoginRequest(username: username, password: password) { (array : [Any]) -> Void in
                     
-                    //First element of array returns either 'true' or 'false' based on status code
+                    //Second element of array returns either 'true' or 'false' based on status code
                     let bool = array[1] as? Bool
                     
                     if bool == true {
@@ -64,6 +64,16 @@ class LoginVC: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
 }
 
 
