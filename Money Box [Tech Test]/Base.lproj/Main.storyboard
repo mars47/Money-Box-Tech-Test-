@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PsT-QI-xuK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,31 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLJ-lw-ElI" customClass="CustomTextField" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
-                                <rect key="frame" x="80" y="160" width="215" height="30"/>
+                                <rect key="frame" x="80" y="204" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feU-0Z-TCm" customClass="CustomTextField" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
-                                <rect key="frame" x="80" y="239" width="215" height="30"/>
+                                <rect key="frame" x="80" y="283" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dt-HV-rUy">
-                                <rect key="frame" x="80" y="131" width="41" height="21"/>
+                                <rect key="frame" x="80" y="175" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMD-TY-Rik">
-                                <rect key="frame" x="80" y="210" width="74" height="21"/>
+                                <rect key="frame" x="80" y="254" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX">
-                                <rect key="frame" x="80" y="318" width="215" height="30"/>
+                                <rect key="frame" x="80" y="362" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.42057639652215467" green="0.85677744289340096" blue="0.77899686074588348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="134"/>
+            <point key="canvasLocation" x="524" y="133.5832083958021"/>
         </scene>
         <!--User AccountVC-->
         <scene sceneID="Mrq-sx-GKQ">
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXf-cD-67F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1376.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1716" y="133.5832083958021"/>
         </scene>
         <!--General InvestmentVC-->
         <scene sceneID="K8a-SG-WQi">
@@ -152,12 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxU-Mq-SZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2257" y="523"/>
+            <point key="canvasLocation" x="2596" y="522.18890554722645"/>
         </scene>
-        <!--View Controller-->
+        <!--Stocks SharesVC-->
         <scene sceneID="PPU-8P-gDv">
             <objects>
-                <viewController id="YGX-Vo-Crm" sceneMemberID="viewController">
+                <viewController id="YGX-Vo-Crm" customClass="StocksSharesVC" customModule="Money_Box__Tech_Test_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3PJ-cb-lJU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,28 +167,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-rN-RJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2258" y="-267"/>
+            <point key="canvasLocation" x="2596" y="-267.61619190404798"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="6fh-28-wIO">
+        <scene sceneID="nMS-IQ-24h">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cT-Zk-If4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PsT-QI-xuK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gNe-qg-QEe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cRN-Sr-TDy">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2T9-ql-FQ8" kind="relationship" relationship="rootViewController" id="Yps-NO-NNE"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q94-FH-EDg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3s-a4-9nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfH-9H-Hcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="134"/>
+            <point key="canvasLocation" x="185.59999999999999" y="133.13343328335833"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Yps-NO-NNE"/>
-    </inferredMetricsTieBreakers>
 </document>

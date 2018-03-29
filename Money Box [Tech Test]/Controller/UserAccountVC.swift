@@ -25,6 +25,17 @@ class UserAccountVC: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     @IBAction func isaButtonPressed(_ sender: Any) {
         if let user = self.user {
           self.performSegue(withIdentifier: "isa", sender: user)
