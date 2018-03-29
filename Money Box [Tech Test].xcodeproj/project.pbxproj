@@ -11,6 +11,9 @@
 		073204A9206995460046F61C /* StocksSharesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073204A8206995460046F61C /* StocksSharesVC.swift */; };
 		07539E99206A43AC003D6E5A /* CustomTextfField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07539E98206A43AC003D6E5A /* CustomTextfField.swift */; };
 		07539E9C206A4CA4003D6E5A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07539E9B206A4CA4003D6E5A /* Network.swift */; };
+		0793C4CD206CDC4200A02ACE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4CC206CDC4200A02ACE /* User.swift */; };
+		0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4CE206CDD8600A02ACE /* ISA.swift */; };
+		0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D0206CDDD200A02ACE /* GIA.swift */; };
 		07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD16F20696CA800792FC7 /* AppDelegate.swift */; };
 		07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD17120696CA800792FC7 /* LoginVC.swift */; };
 		07DCD17520696CA800792FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17320696CA800792FC7 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		073204A8206995460046F61C /* StocksSharesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksSharesVC.swift; sourceTree = "<group>"; };
 		07539E98206A43AC003D6E5A /* CustomTextfField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfField.swift; sourceTree = "<group>"; };
 		07539E9B206A4CA4003D6E5A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0793C4CC206CDC4200A02ACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Money Box [Tech Test]/Model/User.swift"; sourceTree = SOURCE_ROOT; };
+		0793C4CE206CDD8600A02ACE /* ISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISA.swift; sourceTree = "<group>"; };
+		0793C4D0206CDDD200A02ACE /* GIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIA.swift; sourceTree = "<group>"; };
 		07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box [Tech Test].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCD16F20696CA800792FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DCD17120696CA800792FC7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -51,6 +57,15 @@
 				07539E9B206A4CA4003D6E5A /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0793C4D2206CDDD800A02ACE /* Account Type */ = {
+			isa = PBXGroup;
+			children = (
+				0793C4CE206CDD8600A02ACE /* ISA.swift */,
+				0793C4D0206CDDD200A02ACE /* GIA.swift */,
+			);
+			path = "Account Type";
 			sourceTree = "<group>";
 		};
 		07DCD16320696CA800792FC7 = {
@@ -97,6 +112,8 @@
 		07DCD18420698E4300792FC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0793C4CC206CDC4200A02ACE /* User.swift */,
+				0793C4D2206CDDD800A02ACE /* Account Type */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,11 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */,
+				0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */,
 				07539E99206A43AC003D6E5A /* CustomTextfField.swift in Sources */,
 				07539E9C206A4CA4003D6E5A /* Network.swift in Sources */,
 				073204A9206995460046F61C /* StocksSharesVC.swift in Sources */,
 				07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */,
+				0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */,
 				073204A52069946C0046F61C /* UserAccountVC.swift in Sources */,
+				0793C4CD206CDC4200A02ACE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

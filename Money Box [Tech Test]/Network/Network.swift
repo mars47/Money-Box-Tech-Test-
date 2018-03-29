@@ -12,9 +12,9 @@ class Network: NSObject {
     
     static var sharedSessionManager = Network()
     var bearerToken: String?
-    var authRequest: URLRequest?
+    var completeHeader: URLRequest?
     
-    func LoginRequest (username: String, password: String, completion: @escaping (Bool) -> ()) {
+    func LoginRequest (username: String, password: String, completion: @escaping ([Any]) -> ()) {
         
         let parameters: [String: String] = ["Email": "\(username)",
             "Password": "\(password)",
@@ -26,6 +26,12 @@ class Network: NSObject {
         let session = URLSession.shared
         session.dataTask(with: request) { (data, response, error ) in
             
+            //all the variables i need returned in LoginVC, are appended to an array. the array is sent back on completion
+            var array = [Any]()
+            var bool = false
+            
+            
+            
             // Decides whether or not the user has logged in based on the returned http status code
             if let httpresponse = response as? HTTPURLResponse {
                 if (httpresponse.statusCode > 199 && httpresponse.statusCode < 300) {
@@ -34,18 +40,25 @@ class Network: NSObject {
                         
                         do {
                             let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                            self.addBearerTokentoHeader(bearerToken: self.getBearerToken(from: jsonDict), initialRequest: request)
+                            self.addBearerTokentoHeader(bearerToken: self.getBearerToken(from: jsonDict), header: request)
                             //print(jsonDict)
-                            completion(true)
+                            bool = true
+                            let userDict = jsonDict["User"] as! [String: Any]
+                            array.append(userDict); array.append(bool)
+                            completion(array)
+                            
                         } catch {
                             print(error)
-                            completion(false)
+                            bool = false
+                            array.append("failed"); array.append(bool)
+                            completion(array)
                         }
                     }
                     
                 } else {
-                    print("FAILED! USER COULD NOT LOG IN")
-                    completion(false)
+                    print("FAILED")
+                    array.append("failed"); array.append(bool)
+                    completion(array)
                 }
             }
 
@@ -81,18 +94,33 @@ class Network: NSObject {
         return "no token"
     }
     
-    func addBearerTokentoHeader(bearerToken: String, initialRequest: URLRequest) {
+    func addBearerTokentoHeader(bearerToken: String, header: URLRequest) {
         
-        var request: URLRequest = initialRequest
+        var request = header
         request.addValue("Bearer " + bearerToken, forHTTPHeaderField: "Authorization")
-        authRequest = request
+        completeHeader = request
     }
     
     func downloadAccountData() -> () {
           let url = URL(string: "https://api-test00.moneyboxapp.com/investorproduct/thisweek")
-        if let request = authRequest {
+        if var request = completeHeader {
+
+            request.url = url; request.httpMethod = "GET"; request.httpBody = nil
             
-            
+            let session = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                
+                if let data = data {
+                    
+                    do {
+                        let root = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                       // print(root)
+         
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+            session.resume()
         }
     }
 }
