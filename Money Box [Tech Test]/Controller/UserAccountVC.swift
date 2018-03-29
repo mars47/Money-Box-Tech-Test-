@@ -10,7 +10,6 @@ import UIKit
 
 class UserAccountVC: UIViewController {
     
-
     var user: User?
 
     override func viewDidLoad() {
