@@ -25,11 +25,21 @@ struct User {
     var email: String {
         return _email
     }
-    var GIA_Account: GIA {
-        return _GIA_Account
+    var GIA: GIA {
+        get {
+            return _GIA_Account
+        }
+        set {
+            _GIA_Account = newValue
+        }
     }
-    var ISA_Account: ISA {
-        return _ISA_Account
+    var ISA: ISA {
+        get {
+            return _ISA_Account
+        }
+        set {
+            _ISA_Account = newValue
+        }
     }
     
     init(initWithDictionary dict: [String: Any]) {

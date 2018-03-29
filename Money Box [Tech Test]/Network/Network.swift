@@ -101,8 +101,9 @@ class Network: NSObject {
         completeHeader = request
     }
     
-    func downloadAccountData() -> () {
+    func downloadAccountData(completion: @escaping ([Dictionary <String, Any>]) -> ()) {
           let url = URL(string: "https://api-test00.moneyboxapp.com/investorproduct/thisweek")
+
         if var request = completeHeader {
 
             request.url = url; request.httpMethod = "GET"; request.httpBody = nil
@@ -113,7 +114,9 @@ class Network: NSObject {
                     
                     do {
                         let root = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                       // print(root)
+                        let array = root["Products"] as! [Dictionary <String, Any>]
+                        //print(array)
+                        completion(array)
          
                     } catch {
                         print(error)

@@ -88,14 +88,71 @@
                     <view key="view" contentMode="scaleToFill" id="rh7-Y3-qL6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chk-Wz-Lzb">
+                                <rect key="frame" x="25" y="89" width="325" height="73"/>
+                                <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="vXk-c8-M07"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="  Stocks &amp; Shares ISA &gt;">
+                                    <color key="titleColor" red="0.1335065038071066" green="0.1335065038071066" blue="0.1335065038071066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="isaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wY2-32-nbf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2S-hb-hqc">
+                                <rect key="frame" x="25" y="178" width="325" height="73"/>
+                                <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="hXn-2U-XFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="  General Investment Account &gt; ">
+                                    <color key="titleColor" red="0.13350650380000001" green="0.13350650380000001" blue="0.13350650380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="giaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wGX-hY-lYr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S2S-hb-hqc" firstAttribute="leading" secondItem="wZG-ZS-sNj" secondAttribute="leading" constant="25" id="0tz-9A-pka"/>
+                            <constraint firstItem="wZG-ZS-sNj" firstAttribute="trailing" secondItem="S2S-hb-hqc" secondAttribute="trailing" constant="25" id="2PW-gH-Q59"/>
+                            <constraint firstItem="Chk-Wz-Lzb" firstAttribute="leading" secondItem="wZG-ZS-sNj" secondAttribute="leading" constant="25" id="4yE-lF-XQh"/>
+                            <constraint firstItem="wZG-ZS-sNj" firstAttribute="trailing" secondItem="Chk-Wz-Lzb" secondAttribute="trailing" constant="25" id="Xxx-fY-Ztj"/>
+                            <constraint firstItem="S2S-hb-hqc" firstAttribute="top" secondItem="Chk-Wz-Lzb" secondAttribute="bottom" constant="16" id="Z7d-Zl-bEy"/>
+                            <constraint firstItem="Chk-Wz-Lzb" firstAttribute="top" secondItem="wZG-ZS-sNj" secondAttribute="top" constant="25" id="jz4-H4-pdi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wZG-ZS-sNj"/>
                     </view>
                     <navigationItem key="navigationItem" id="E8F-26-RdU"/>
+                    <connections>
+                        <segue destination="YGX-Vo-Crm" kind="show" identifier="isa" id="dMC-5m-eZK"/>
+                        <segue destination="MYk-r7-UYD" kind="show" identifier="gia" id="Zcz-7h-TyZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXf-cD-67F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="134"/>
+            <point key="canvasLocation" x="1376.8" y="133.5832083958021"/>
+        </scene>
+        <!--General InvestmentVC-->
+        <scene sceneID="K8a-SG-WQi">
+            <objects>
+                <viewController id="MYk-r7-UYD" customClass="GeneralInvestmentVC" customModule="Money_Box__Tech_Test_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRY-HK-2X6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="zWk-SB-pBE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxU-Mq-SZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257" y="523"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PPU-8P-gDv">
@@ -110,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-rN-RJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="134"/>
+            <point key="canvasLocation" x="2258" y="-267"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6fh-28-wIO">
