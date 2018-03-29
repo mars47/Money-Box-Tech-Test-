@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="186" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--User AccountVC-->
         <scene sceneID="Mrq-sx-GKQ">
             <objects>
-                <viewController id="2T9-ql-FQ8" sceneMemberID="viewController">
+                <viewController id="2T9-ql-FQ8" customClass="UserAccountVC" customModule="Money_Box__Tech_Test_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rh7-Y3-qL6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,6 +132,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OzL-YS-D67"/>
+        <segue reference="Yps-NO-NNE"/>
     </inferredMetricsTieBreakers>
 </document>

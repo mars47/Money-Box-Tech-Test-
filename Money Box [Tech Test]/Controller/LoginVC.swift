@@ -22,14 +22,20 @@ class LoginVC: UIViewController {
     @IBAction func LoginButtonPressed(_ sender: Any) {
         if let username = usernameTextField.text {
             if let password = passwordTextField.text {
-                Network.sharedSessionManager.LoginRequest(username: username, password: password) { (state : Bool) -> Void in
-          
-                    if state == true {
+                Network.sharedSessionManager.LoginRequest(username: username, password: password) { (array : [Any]) -> Void in
+                    
+                    //First element of array returns either 'true' or 'false' based on status code
+                    let bool = array[1] as? Bool
+                    
+                    if bool == true {
+                        
+                        let userDict = array[0] as! [String : Any]
+                        let user = User(initWithDictionary: userDict)
                         DispatchQueue.main.async{
-                        self.performSegue(withIdentifier: "show", sender: nil)
+                        self.performSegue(withIdentifier: "show", sender: user)
                         }
                     }
-                    if state == false {
+                    if bool == false {
                         DispatchQueue.main.async{
                         self.displayAlertMessage(message: "You have entered Incorrect Details")
                         }
@@ -47,6 +53,15 @@ class LoginVC: UIViewController {
         let okAction = UIAlertAction(title:"Ok", style: UIAlertActionStyle.default, handler:nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if let destination = segue.destination as? UserAccountVC {
+            if let user = sender as? User {
+                destination.user = user
+            }
+        }
     }
     
 }

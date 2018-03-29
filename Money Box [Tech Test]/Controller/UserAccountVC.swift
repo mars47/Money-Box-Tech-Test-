@@ -10,16 +10,12 @@ import UIKit
 
 class UserAccountVC: UIViewController {
     
+    var user: User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Network.sharedSessionManager.downloadAccountData()
+
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 
