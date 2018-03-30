@@ -41,7 +41,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-il-8eX" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="80" y="318" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.42057639652215467" green="0.85677744289340096" blue="0.77899686074588348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="LOGIN">
@@ -89,7 +89,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chk-Wz-Lzb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chk-Wz-Lzb" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="25" y="45" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -103,7 +103,7 @@
                                     <action selector="isaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wY2-32-nbf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2S-hb-hqc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2S-hb-hqc" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="25" y="134" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -117,7 +117,7 @@
                                     <action selector="giaButtonPressed:" destination="2T9-ql-FQ8" eventType="touchUpInside" id="wGX-hY-lYr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55n-Jz-MrL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55n-Jz-MrL" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="25" y="569" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.85677744290000002" green="0.42508652808470115" blue="0.40568496304992441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -166,7 +166,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-Lo-aAs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-Lo-aAs" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="25" y="159" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -230,7 +230,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qum-13-FPe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qum-13-FPe" customClass="CustomButton" customModule="Money_Box__Tech_Test_" customModuleProvider="target">
                                 <rect key="frame" x="25" y="159" width="325" height="73"/>
                                 <color key="backgroundColor" red="0.4205763965" green="0.85677744290000002" blue="0.77899686069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -307,6 +307,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="OzL-YS-D67"/>
         <segue reference="2Do-cP-oIW"/>
     </inferredMetricsTieBreakers>
 </document>

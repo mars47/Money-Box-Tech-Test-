@@ -15,6 +15,7 @@
 		0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4CE206CDD8600A02ACE /* ISA.swift */; };
 		0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D0206CDDD200A02ACE /* GIA.swift */; };
 		0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */; };
+		0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D5206E5E0100A02ACE /* CustomButton.swift */; };
 		07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD16F20696CA800792FC7 /* AppDelegate.swift */; };
 		07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD17120696CA800792FC7 /* LoginVC.swift */; };
 		07DCD17520696CA800792FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17320696CA800792FC7 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		0793C4CE206CDD8600A02ACE /* ISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISA.swift; sourceTree = "<group>"; };
 		0793C4D0206CDDD200A02ACE /* GIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIA.swift; sourceTree = "<group>"; };
 		0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentVC.swift; sourceTree = "<group>"; };
+		0793C4D5206E5E0100A02ACE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box [Tech Test].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCD16F20696CA800792FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DCD17120696CA800792FC7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		07DCD18520698E6300792FC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0793C4D5206E5E0100A02ACE /* CustomButton.swift */,
 				07539E98206A43AC003D6E5A /* CustomTextfField.swift */,
 			);
 			path = View;
@@ -219,6 +222,7 @@
 				0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */,
 				073204A9206995460046F61C /* StocksSharesVC.swift in Sources */,
 				07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */,
+				0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */,
 				0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */,
 				073204A52069946C0046F61C /* UserAccountVC.swift in Sources */,
 				0793C4CD206CDC4200A02ACE /* User.swift in Sources */,
