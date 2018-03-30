@@ -148,7 +148,7 @@ class Network: NSObject {
                         print(error)
                     }  
                 }
-                
+
             }.resume()
         }
     }
