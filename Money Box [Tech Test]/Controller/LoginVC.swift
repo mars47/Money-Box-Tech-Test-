@@ -4,7 +4,7 @@
 //
 //  Created by Omar  on 26/03/2018.
 //  Copyright © 2018 Omar. All rights reserved.
-//
+//  https://github.com/MoneyBox/ios-technical-task
 
 import UIKit
 

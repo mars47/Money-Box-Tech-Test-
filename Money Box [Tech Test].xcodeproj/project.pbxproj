@@ -16,6 +16,8 @@
 		0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D0206CDDD200A02ACE /* GIA.swift */; };
 		0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */; };
 		0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D5206E5E0100A02ACE /* CustomButton.swift */; };
+		0793C4EA2076A10A00A02ACE /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4E92076A10A00A02ACE /* Header.swift */; };
+		0793C4EC2076A17C00A02ACE /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4EB2076A17C00A02ACE /* BearerToken.swift */; };
 		07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD16F20696CA800792FC7 /* AppDelegate.swift */; };
 		07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD17120696CA800792FC7 /* LoginVC.swift */; };
 		07DCD17520696CA800792FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17320696CA800792FC7 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		0793C4D0206CDDD200A02ACE /* GIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIA.swift; sourceTree = "<group>"; };
 		0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentVC.swift; sourceTree = "<group>"; };
 		0793C4D5206E5E0100A02ACE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0793C4E92076A10A00A02ACE /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		0793C4EB2076A17C00A02ACE /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box [Tech Test].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCD16F20696CA800792FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DCD17120696CA800792FC7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				07539E9B206A4CA4003D6E5A /* Network.swift */,
+				0793C4E92076A10A00A02ACE /* Header.swift */,
+				0793C4EB2076A17C00A02ACE /* BearerToken.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -215,11 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0793C4EA2076A10A00A02ACE /* Header.swift in Sources */,
 				07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */,
 				0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */,
 				07539E99206A43AC003D6E5A /* CustomTextfField.swift in Sources */,
 				07539E9C206A4CA4003D6E5A /* Network.swift in Sources */,
 				0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */,
+				0793C4EC2076A17C00A02ACE /* BearerToken.swift in Sources */,
 				073204A9206995460046F61C /* StocksSharesVC.swift in Sources */,
 				07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */,
 				0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */,

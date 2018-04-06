@@ -11,7 +11,7 @@ import UIKit
 class Network: NSObject {
     
     static var sharedSessionManager = Network()
-    var bearerToken: String?
+    //var bearerToken: String?
     var completeHeader: URLRequest?
     
     func LoginRequest (username: String, password: String, completion: @escaping ([Any]) -> ()) {
@@ -38,6 +38,11 @@ class Network: NSObject {
                         
                         do {
                             let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                            
+                            var bearerToken = BearerToken(withPath:Endpoint.POSTlogin.endpoint, requestType: "")
+                            
+                            bearerToken.request = bearerToken.addHttpBody(body: Data())
+                            //let newSession =  bearerToken.getBearerTokenForSession(from:jsonDict)
                             self.addBearerTokentoHeader(bearerToken: self.getBearerToken(from: jsonDict), header: request)
                             //print(jsonDict)
                             bool = true
@@ -168,4 +173,27 @@ class Network: NSObject {
             }.resume()
         }
     }
+}
+
+enum Endpoint {
+    
+    case POSTlogin
+    case GETaccountdata
+    case POSToneoffpayments
+    case POSTlogout
+}
+extension Endpoint {
+    var endpoint: String {
+        switch self {
+        case .POSTlogin: return "/users/login"
+        case .GETaccountdata: return "/investorproduct/thisweek"
+        case .POSToneoffpayments: return "/oneoffpayments"
+        case .POSTlogout: return "/users/logout"
+        }
+    }
+}
+
+enum RequestType {
+    case GET
+    case POST
 }
