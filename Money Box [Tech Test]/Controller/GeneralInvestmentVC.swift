@@ -9,21 +9,21 @@
 import UIKit
 
 class GeneralInvestmentVC: UIViewController {
-    
+    let networkManager = NetworkManager()
     var user: User?
     @IBOutlet weak var accountBalance: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if let user = user {
-       accountBalance.text = "£" + String(user.GIA.moneyBox)
+            accountBalance.text = "£" + String(user.GIA.moneyBox)
         }
     }
+    
     @IBAction func paymentButtonPressed(_ sender: Any) {
         
         guard let user = user else {return}
-        Network.sharedSessionManager.makeOneOfPayment(amount: 10, productID: user.GIA.investorProductId) { (result : [String: Int]) -> () in
+        networkManager.makeOneOfPayment(amount: 10, productID: user.GIA.investorProductId, bearerToken: user.bearerToken) { (result : [String: Int]) -> () in
             
             if let money =  result["Moneybox"] {
                 DispatchQueue.main.async {

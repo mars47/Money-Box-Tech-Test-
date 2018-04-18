@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0701D0B52077DA6D00F099EB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701D0B42077DA6D00F099EB /* NetworkManager.swift */; };
+		0701D0BA2077F1CC00F099EB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701D0B92077F1CC00F099EB /* Result.swift */; };
 		073204A52069946C0046F61C /* UserAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073204A42069946C0046F61C /* UserAccountVC.swift */; };
 		073204A9206995460046F61C /* StocksSharesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073204A8206995460046F61C /* StocksSharesVC.swift */; };
 		07539E99206A43AC003D6E5A /* CustomTextfField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07539E98206A43AC003D6E5A /* CustomTextfField.swift */; };
-		07539E9C206A4CA4003D6E5A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07539E9B206A4CA4003D6E5A /* Network.swift */; };
 		0793C4CD206CDC4200A02ACE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4CC206CDC4200A02ACE /* User.swift */; };
 		0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4CE206CDD8600A02ACE /* ISA.swift */; };
 		0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D0206CDDD200A02ACE /* GIA.swift */; };
 		0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */; };
 		0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4D5206E5E0100A02ACE /* CustomButton.swift */; };
 		0793C4EA2076A10A00A02ACE /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4E92076A10A00A02ACE /* Header.swift */; };
-		0793C4EC2076A17C00A02ACE /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4EB2076A17C00A02ACE /* BearerToken.swift */; };
+		0793C4EC2076A17C00A02ACE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793C4EB2076A17C00A02ACE /* Request.swift */; };
 		07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD16F20696CA800792FC7 /* AppDelegate.swift */; };
 		07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DCD17120696CA800792FC7 /* LoginVC.swift */; };
 		07DCD17520696CA800792FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCD17320696CA800792FC7 /* Main.storyboard */; };
@@ -27,17 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0701D0B42077DA6D00F099EB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0701D0B92077F1CC00F099EB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		073204A42069946C0046F61C /* UserAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountVC.swift; sourceTree = "<group>"; };
 		073204A8206995460046F61C /* StocksSharesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksSharesVC.swift; sourceTree = "<group>"; };
 		07539E98206A43AC003D6E5A /* CustomTextfField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfField.swift; sourceTree = "<group>"; };
-		07539E9B206A4CA4003D6E5A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0793C4CC206CDC4200A02ACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Money Box [Tech Test]/Model/User.swift"; sourceTree = SOURCE_ROOT; };
 		0793C4CE206CDD8600A02ACE /* ISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISA.swift; sourceTree = "<group>"; };
 		0793C4D0206CDDD200A02ACE /* GIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIA.swift; sourceTree = "<group>"; };
 		0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentVC.swift; sourceTree = "<group>"; };
 		0793C4D5206E5E0100A02ACE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0793C4E92076A10A00A02ACE /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		0793C4EB2076A17C00A02ACE /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
+		0793C4EB2076A17C00A02ACE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box [Tech Test].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCD16F20696CA800792FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DCD17120696CA800792FC7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -59,12 +61,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0701D0B62077F13B00F099EB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0701D0B92077F1CC00F099EB /* Result.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0708241620874FD80014D1BE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0793C4E92076A10A00A02ACE /* Header.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		07539E9A206A4C71003D6E5A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				07539E9B206A4CA4003D6E5A /* Network.swift */,
-				0793C4E92076A10A00A02ACE /* Header.swift */,
-				0793C4EB2076A17C00A02ACE /* BearerToken.swift */,
+				0701D0B62077F13B00F099EB /* Enums */,
+				0708241620874FD80014D1BE /* Protocols */,
+				0793C4EB2076A17C00A02ACE /* Request.swift */,
+				0701D0B42077DA6D00F099EB /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -225,12 +244,13 @@
 				07DCD17220696CA800792FC7 /* LoginVC.swift in Sources */,
 				0793C4CF206CDD8600A02ACE /* ISA.swift in Sources */,
 				07539E99206A43AC003D6E5A /* CustomTextfField.swift in Sources */,
-				07539E9C206A4CA4003D6E5A /* Network.swift in Sources */,
 				0793C4D4206D326600A02ACE /* GeneralInvestmentVC.swift in Sources */,
-				0793C4EC2076A17C00A02ACE /* BearerToken.swift in Sources */,
+				0701D0BA2077F1CC00F099EB /* Result.swift in Sources */,
+				0793C4EC2076A17C00A02ACE /* Request.swift in Sources */,
 				073204A9206995460046F61C /* StocksSharesVC.swift in Sources */,
 				07DCD17020696CA800792FC7 /* AppDelegate.swift in Sources */,
 				0793C4D6206E5E0100A02ACE /* CustomButton.swift in Sources */,
+				0701D0B52077DA6D00F099EB /* NetworkManager.swift in Sources */,
 				0793C4D1206CDDD200A02ACE /* GIA.swift in Sources */,
 				073204A52069946C0046F61C /* UserAccountVC.swift in Sources */,
 				0793C4CD206CDC4200A02ACE /* User.swift in Sources */,

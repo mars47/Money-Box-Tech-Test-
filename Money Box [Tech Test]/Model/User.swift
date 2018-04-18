@@ -15,6 +15,7 @@ struct User {
    private var _email: String!
    private var _GIA_Account: GIA!
    private var _ISA_Account: ISA!
+   private var _bearerToken: String!
 
     var firstName: String {
         return _firstName
@@ -42,6 +43,14 @@ struct User {
         }
     }
     
+    var bearerToken: String {
+        get {
+            return _bearerToken
+        }
+        set {
+            _bearerToken = newValue
+        }
+    }
     init(initWithDictionary dict: [String: Any]) {
         
         _firstName = dict["FirstName"] as! String
