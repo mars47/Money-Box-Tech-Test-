@@ -10,6 +10,7 @@ import UIKit
 
 class UserAccountVC: UIViewController {
     
+    let networkManager = NetworkManager()
     var user: User?
 
     override func viewDidLoad() {
@@ -19,10 +20,11 @@ class UserAccountVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-        Network.sharedSessionManager.downloadAccountData() { (product : [Dictionary <String, Any>]) -> () in
-            
+ 
             if var user = self.user {
                 
+                networkManager.downloadAccountData(bearerToken: user.bearerToken) { (product : [Dictionary <String, Any>]) -> () in
+    
                 user.ISA = ISA(initWithDictionary: product[0])
                 user.GIA = GIA(initWithDictionary: product[1])
                 self.user = user
@@ -65,7 +67,7 @@ class UserAccountVC: UIViewController {
     }
     
     @IBAction func logoutButtonPressed(_ sender: Any) {
-        Network.sharedSessionManager.logout()
+        networkManager.logout(bearerToken: (user?.bearerToken)!)
         self.performSegue(withIdentifier: "logout", sender: nil)
     }
 }

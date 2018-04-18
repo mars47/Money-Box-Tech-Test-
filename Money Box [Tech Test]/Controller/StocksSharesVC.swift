@@ -9,7 +9,7 @@
 import UIKit
 
 class StocksSharesVC: UIViewController {
-    
+    let networkManager = NetworkManager()
     var user: User?
     @IBOutlet weak var accountBalance: UILabel!
     
@@ -23,7 +23,8 @@ class StocksSharesVC: UIViewController {
     @IBAction func paymentButtonPressed(_ sender: Any) {
         
         guard let user = user else {return}
-        Network.sharedSessionManager.makeOneOfPayment(amount: 10, productID: user.ISA.investorProductId) { (result : [String: Int]) -> () in
+        print("isa id:  \(user.ISA.investorProductId)" )
+        networkManager.makeOneOfPayment(amount: 10, productID: user.ISA.investorProductId, bearerToken: user.bearerToken) { (result : [String: Int]) -> () in
             
             if let money =  result["Moneybox"] {
                 DispatchQueue.main.async {

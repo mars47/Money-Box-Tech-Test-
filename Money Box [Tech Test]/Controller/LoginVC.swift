@@ -4,7 +4,7 @@
 //
 //  Created by Omar  on 26/03/2018.
 //  Copyright © 2018 Omar. All rights reserved.
-//
+//  https://github.com/MoneyBox/ios-technical-task
 
 import UIKit
 
@@ -20,31 +20,25 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func LoginButtonPressed(_ sender: Any) {
-        if let username = usernameTextField.text {
-            if let password = passwordTextField.text {
-                Network.sharedSessionManager.LoginRequest(username: username, password: password) { (array : [Any]) -> Void in
-                    
-                    //Second element of array returns either 'true' or 'false' based on status code
-                    let bool = array[1] as? Bool
-                    
-                    if bool == true {
-                        
-                        let userDict = array[0] as! [String : Any]
-                        let user = User(initWithDictionary: userDict)
-                        DispatchQueue.main.async{
-                        self.performSegue(withIdentifier: "show", sender: user)
-                        }
-                    }
-                    if bool == false {
-                        DispatchQueue.main.async{
-                        self.displayAlertMessage(message: "You have entered Incorrect Details")
-                        }
-                    }
 
+       let networkManager = NetworkManager()
+        networkManager.LoginRequest(username: usernameTextField.text!, password: passwordTextField.text!) { jsonDict, httpStatusCode, bearerToken in
+            
+            if httpStatusCode == 200 {
+                var user = User(initWithDictionary: jsonDict)
+                user.bearerToken = bearerToken
+                DispatchQueue.main.async{
+                    self.performSegue(withIdentifier: "show", sender: user)
+                }
+            }
+            
+            if httpStatusCode != 200 {
+                DispatchQueue.main.async{
+                    self.displayAlertMessage(message: "You have entered Incorrect Details")
                 }
             }
         }
-       
+        
     }
     
     func displayAlertMessage(message: String) {
