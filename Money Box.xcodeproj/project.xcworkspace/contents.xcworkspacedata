@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Money Box [Tech Test].xcodeproj">
+      location = "self:../Money Box">
    </FileRef>
 </Workspace>

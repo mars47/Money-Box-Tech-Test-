@@ -33,14 +33,14 @@
 		073204A42069946C0046F61C /* UserAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountVC.swift; sourceTree = "<group>"; };
 		073204A8206995460046F61C /* StocksSharesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksSharesVC.swift; sourceTree = "<group>"; };
 		07539E98206A43AC003D6E5A /* CustomTextfField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfField.swift; sourceTree = "<group>"; };
-		0793C4CC206CDC4200A02ACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Money Box [Tech Test]/Model/User.swift"; sourceTree = SOURCE_ROOT; };
+		0793C4CC206CDC4200A02ACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "Money Box/Model/User.swift"; sourceTree = SOURCE_ROOT; };
 		0793C4CE206CDD8600A02ACE /* ISA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISA.swift; sourceTree = "<group>"; };
 		0793C4D0206CDDD200A02ACE /* GIA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIA.swift; sourceTree = "<group>"; };
 		0793C4D3206D326600A02ACE /* GeneralInvestmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInvestmentVC.swift; sourceTree = "<group>"; };
 		0793C4D5206E5E0100A02ACE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0793C4E92076A10A00A02ACE /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		0793C4EB2076A17C00A02ACE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box [Tech Test].app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DCD16C20696CA800792FC7 /* Money Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCD16F20696CA800792FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DCD17120696CA800792FC7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		07DCD17420696CA800792FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			children = (
 				07DCD17820696CA800792FC7 /* LaunchScreen.storyboard */,
 				07DCD18320696D6D00792FC7 /* Git */,
-				07DCD16E20696CA800792FC7 /* Money Box [Tech Test] */,
+				07DCD16E20696CA800792FC7 /* Money Box */,
 				07DCD16D20696CA800792FC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,12 +110,12 @@
 		07DCD16D20696CA800792FC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */,
+				07DCD16C20696CA800792FC7 /* Money Box.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07DCD16E20696CA800792FC7 /* Money Box [Tech Test] */ = {
+		07DCD16E20696CA800792FC7 /* Money Box */ = {
 			isa = PBXGroup;
 			children = (
 				07DCD18420698E4300792FC7 /* Model */,
@@ -127,7 +127,7 @@
 				07DCD17620696CA800792FC7 /* Assets.xcassets */,
 				07DCD17B20696CA900792FC7 /* Info.plist */,
 			);
-			path = "Money Box [Tech Test]";
+			path = "Money Box";
 			sourceTree = "<group>";
 		};
 		07DCD18320696D6D00792FC7 /* Git */ = {
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07DCD16B20696CA800792FC7 /* Money Box [Tech Test] */ = {
+		07DCD16B20696CA800792FC7 /* Money Box */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07DCD17E20696CA900792FC7 /* Build configuration list for PBXNativeTarget "Money Box [Tech Test]" */;
+			buildConfigurationList = 07DCD17E20696CA900792FC7 /* Build configuration list for PBXNativeTarget "Money Box" */;
 			buildPhases = (
 				07DCD16820696CA800792FC7 /* Sources */,
 				07DCD16920696CA800792FC7 /* Frameworks */,
@@ -182,9 +182,9 @@
 			);
 			dependencies = (
 			);
-			name = "Money Box [Tech Test]";
+			name = "Money Box";
 			productName = "Money Box [Tech Test]";
-			productReference = 07DCD16C20696CA800792FC7 /* Money Box [Tech Test].app */;
+			productReference = 07DCD16C20696CA800792FC7 /* Money Box.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07DCD16720696CA800792FC7 /* Build configuration list for PBXProject "Money Box [Tech Test]" */;
+			buildConfigurationList = 07DCD16720696CA800792FC7 /* Build configuration list for PBXProject "Money Box" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,7 +216,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07DCD16B20696CA800792FC7 /* Money Box [Tech Test] */,
+				07DCD16B20696CA800792FC7 /* Money Box */,
 			);
 		};
 /* End PBXProject section */
@@ -391,9 +391,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Money Box [Tech Test]/Info.plist";
+				INFOPLIST_FILE = "Money Box/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.Money-Box--Tech-Test-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.Money-Box-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,9 +405,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Money Box [Tech Test]/Info.plist";
+				INFOPLIST_FILE = "Money Box/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.Money-Box--Tech-Test-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TAE.Money-Box-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,7 +417,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07DCD16720696CA800792FC7 /* Build configuration list for PBXProject "Money Box [Tech Test]" */ = {
+		07DCD16720696CA800792FC7 /* Build configuration list for PBXProject "Money Box" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DCD17C20696CA900792FC7 /* Debug */,
@@ -426,7 +426,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07DCD17E20696CA900792FC7 /* Build configuration list for PBXNativeTarget "Money Box [Tech Test]" */ = {
+		07DCD17E20696CA900792FC7 /* Build configuration list for PBXNativeTarget "Money Box" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DCD17F20696CA900792FC7 /* Debug */,
