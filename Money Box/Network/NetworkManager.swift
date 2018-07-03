@@ -30,7 +30,7 @@ class NetworkManager {
         request.request = request.addRequestType(type: .POST)
         guard let completeRequest = request.request else { return }
         
-
+        
         self.session.dataTask(with: completeRequest) { (data, response, error ) in
             
             // Decides whether or not the user has logged in based on the returned http status code
@@ -40,7 +40,7 @@ class NetworkManager {
                         do {
                             let root = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                             if let jsonDict = root["User"] as? [String: Any] {
-                            completion(jsonDict, httpresponse.statusCode, request.getBearerToken(data: data))
+                                completion(jsonDict, httpresponse.statusCode, request.getBearerToken(data: data))
                             }
                         }
                         catch {
@@ -48,8 +48,11 @@ class NetworkManager {
                         }
                     }
                 }
+                    else {
+                        completion([String : Any](), httpresponse.statusCode, "")
+                }
             }
-        }.resume()
+            }.resume()
     }
     
     func downloadAccountData(bearerToken: String, completion: @escaping ([Dictionary <String, Any>]) -> ()) {
